@@ -7,7 +7,7 @@ const validTargetOption = ['6', '6.5', '7', '7.6', '8', '8.3', 'current'];
 module.exports = function(context, opts) {
   // `|| {}` to support node 4
   opts = opts || {};
-  const targetOption = String(opts.target);
+  const targetOption = 'current';
   // use indexOf to support node 4
   if (targetOption && validTargetOption.indexOf(targetOption) === -1) {
     throw new Error(
